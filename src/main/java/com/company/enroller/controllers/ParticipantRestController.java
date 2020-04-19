@@ -43,7 +43,6 @@ public class ParticipantRestController {
 		}
 		participantService.add(participant);
 		return new ResponseEntity<Participant>(participant, HttpStatus.CREATED);
-
 	}
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
